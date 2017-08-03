@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>vote</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <display-name>Encoding</display-name>
+    <filter-name>Encoding</filter-name>
+    <filter-class>com.cn.vite.filter.Encoding</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>VoteServlet</display-name>
+    <servlet-name>VoteServlet</servlet-name>
+    <servlet-class>com.cn.vite.servlet.VoteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VoteServlet</servlet-name>
+    <url-pattern>/VoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Data</display-name>
+    <servlet-name>Data</servlet-name>
+    <servlet-class>com.cn.vite.servlet.Data</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Data</servlet-name>
+    <url-pattern>/Data</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root[
+ <!ELEMENT root (note+)>
+ <!ELEMENT note (driver,url,username,password)>
+]>
+<root>
+	<!-- 数据库 db2配置信息 -->
+	<note>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3306/db2</url>
+		<username>root</username>
+		<password>123456</password>
+	</note>
+	<!-- 数据库 RT配置信息 -->
+	<note>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3306/rt</url>
+		<username>root</username>
+		<password>123456</password>
+	</note>
+	<!-- 数据库 RT3配置信息 -->
+	<note>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3306/rt3</url>
+		<username>root</username>
+		<password>123456</password>
+	</note>
+</root>
